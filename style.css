@@ -103,6 +103,14 @@ form textarea { min-height: 140px; }
 .site-footer nav a { color: var(--ink); font-weight: 600; }
 .site-footer p { color: var(--ink-soft); font-size: 0.9rem; margin: 4px 0; }
 
+/* Compatibility with Day 1 post pages (header-inner, gold tags, card-meta) */
+.site-header .header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; padding-top: 14px; padding-bottom: 14px; max-width: 1080px; margin: 0 auto; padding-left: 18px; padding-right: 18px; }
+.tag.gold { background: #fdf6d8; color: #7a6210; }
+.card-meta, .updated, .lead { color: var(--ink-soft); }
+.card-meta { font-size: 0.88rem; }
+.updated { font-size: 0.9rem; }
+.lead { font-size: 1.1rem; }
+
 @media (min-width: 640px) {
   .cards { grid-template-columns: 1fr 1fr; }
   .hero h1 { font-size: 2.9rem; }
